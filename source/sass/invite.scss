@@ -1,0 +1,48 @@
+.invite {
+  display: flex;
+  padding: 0px 20px 8px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.invite__grey {
+  background: $basic_grey;
+}
+
+.invite__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 26px;
+  color: rgba(17, 17, 17, 1);
+  ;
+}
+
+.invite__address {
+  font-weight: 400;
+  font-family: "Arial", "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special_dark-grey;
+}
+
+@media (min-width: $tablet) {
+  .invite {
+    padding: 56px 72px 40px 71px;
+    align-items: flex-start;
+  }
+
+  .invite__text {
+    min-width: 171px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    margin-right: 282px;
+  }
+
+  .invite__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+}

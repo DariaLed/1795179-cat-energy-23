@@ -1,0 +1,27 @@
+.map {
+  position: relative;
+}
+
+.map__img-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.map__google-container {
+  height: 362px;
+  position: relative;
+  z-index: 2;
+}
+
+.map__google-map {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: $tablet) {
+  .map__google-container {
+    height: 400px;
+  }
+}

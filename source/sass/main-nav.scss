@@ -1,0 +1,25 @@
+.main-nav {
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 24px;
+  height: 16px;
+  background: red;
+  border: none;
+  cursor: pointer;
+  right: 21px;
+  top: -42px;
+  display: block;
+}
+
+.main-nav__list {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+}
