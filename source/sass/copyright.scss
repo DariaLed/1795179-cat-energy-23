@@ -1,0 +1,48 @@
+.copyright {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.copyright__link {
+  font-family: "Arial", "Oswald", sans-serif;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 1);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.copyright__name {
+  color: #444444;
+  margin-top: 10px;
+}
+
+.copyright__svg {
+  fill: #666666;
+  margin-top: 3px;
+}
+
+.copyright__svg :hover {
+  fill: $basicgreen;
+}
+
+.copyright__svg :active {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+@media (min-width: $tablet) {
+  .copyright {
+    padding: 0;
+  }
+
+  .copyright__link {
+    justify-content: flex-end;
+    padding: 10px 0;
+  }
+
+  .copyright__name {
+    margin-top: 10px;
+  }
+}

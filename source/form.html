@@ -9,7 +9,6 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-
 <body class="page-body">
 
   <header class="page-header">
@@ -23,7 +22,7 @@
       </picture>
     </a>
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
@@ -47,310 +46,96 @@
 
   <main class="page-main">
 
-    <section class="catalog">
-      <h2 class="catalog__products">Каталог продукции</h2>
+    <section class="form">
 
-      <div class="catalog__item">
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-1-desktop-1.jpg" width="" height=""
-                alt="Оранжевая упаковка Cat Energy PRO 500 г со вкусом курицы">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy PRO 500 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Курица</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
+      <div class="form-container">
+        <form class="form__link" action="https://echo.htmlacademy.ru" method="post">
 
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-2-desktop-1.jpg" width="" height=""
-                alt="Оранжевая упаковка Cat Energy PRO 1000 г, со вкусом курицы">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy PRO 1000 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>1000 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Курица</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>1000р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
+          <section class="form__choice">
+            <h2 class="form__selection">Подбор программы</h2>
+            <p class="form__filling">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          </section>
 
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-3-desktop.jpg" width="" height=""
-                alt="Зеленая упаковка Cat Energy PRO 500 г со вкусом рыбы">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy PRO 500 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Рыба</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
+          <label class="form__label" for="name">Имя:*</label>
+          <input class="form__input" type="text" id="name" name="name" placeholder="Укажите имя" value="барсик"
+            required>
+          <label class="form__label" for="weight">Вес (кг):*</label>
+          <input class="form__input" type="text" id="weight" name="weight" placeholder="Укажите вес" value="7" required>
+          <label class="form__label" for="age">Возраст (лет):</label>
+          <input class="form__input" type="text" id="age" name="age" placeholder="Укажите возраст" value="7" required>
 
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-4-desktop-1.jpg" width="" height=""
-                alt="Зеленая упаковка Cat Energy PRO 1000 г со вкусом рыбы">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy PRO 1000 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>1000 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Рыба</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>1000р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
 
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-5-desktop.jpg" width="" height=""
-                alt="Синяя упаковка Cat Energy slim 500 г со вкусом гречки">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy slim 500 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Гречка</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>400р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
+          <section class="form__goals">
+            <h1 class="visually-hidden">Цель заказа</h1>
+            <ul class="goals">
+              <li class="goals__item radio">
+                <input class="radio__input visually-hidden" type="radio" name="target" id="slimming" checked>
+                <label class="radio__label" for="slimming">Похудение</label>
+              </li>
+              <li class="goals__item radio">
+                <input class="radio__input visually-hidden" type="radio" name="target" id="weight-gain">
+                <label class="radio__label" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="goals__item radio">
+                <input class="radio__input visually-hidden" type="radio" name="target" id="need-advice">
+                <label class="radio__label" for="need-advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </section>
 
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-6-desktop.jpg" width="" height=""
-                alt="Синяя упаковка Cat Energy slim 1000 г со вкусом гречки">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy slim 1000 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>1000 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Гречка</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>700р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
+          <section class="form__contacts">
+            <h2 class="form__contact complex-title">
+              <span class="complex-title__text">Контактные данные (владельца кота)</span>
+            </h2>
+            <label class="form__label form__label-mail" for="mail-field">E-mail:*</label>
+            <input class="form__input form__input-mail" type="text" name="mail" id="form__label-field"
+              placeholder="Укажите E-mail" value="kuklachev@gmail.com" required>
 
-        <div class="catalog__list">
-          <div class="catalog__product">
-            <a class="catalog__photo" href="#">
-              <img class="catalog__photo-img" src="./img/catalog-7-desktop.jpg" width="" height=""
-                alt="Фиолетовая упаковка Cat Energy slim 500 г со вкусом риса">
-            </a>
-            <div class="catalog__block">
-              <a class="catalog__link" href="#">
-                <h2 class="catalog__title">Cat Energy slim 500 г</h2>
-              </a>
-              <table class="catalog__description">
-                <tbody class="catalog__options">
-                  <tr>
-                    <td>Масса</td>
-                    <td>500 г</td>
-                  </tr>
-                  <tr>
-                    <td>Вкус</td>
-                    <td>Рис</td>
-                  </tr>
-                  <tr>
-                    <td>Цена</td>
-                    <td>500р</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <a class="catalog__button" href="#">Заказать</a>
-          </div>
-        </div>
+            <label class="form__label form__label-telephone" for="telephone-field">Телефон:*</label>
+            <input class="form__input form__input-mail" type="text" name="telephone" id="telephone-field"
+              placeholder="Укажите телефон" value="8 (960) 900-60-90" required>
+          </section>
 
-        <section class="product">
-          <h2 class="product__title">Показать еще 100500 товаров</h2>
-          <p class="product__text">На самом деле вкусов гораздо больше!</p>
-          <a class="product__button--light" href="#">Показать все</a>
-        </section>
+          <section class="form__comments">
+            <h2 class="form__comment complex-title">
+              <span class="complex-title__text">Комментарий</span>
+            </h2>
+            <textarea class="form__textarea" name="comment" id="comment-field"
+              rows="10">Расскажите обо всех повадках кота</textarea>
+          </section>
+
+          <section class="form__additionally">
+            <h2 class="form__filter complex-title">
+              <span class="complex-title__text">Дополнительно</span>
+            </h2>
+            <ul class="form__filter-item">
+              <li class="form__filter-option checkbox">
+                <input class="checkbox-input visually-hidden" type="checkbox" name="slimming" id="slimming" checked>
+                <label class="checkbox-label" for="slimming">Сахарозаменитель</label>
+              </li>
+              <li class="form__filter-option checkbox">
+                <input class="checkbox-input visually-hidden" type="checkbox" name="weight-gain" id="weight-gain">
+                <label class="checkbox-label" for="weight-gain">Питьевая вода</label>
+              </li>
+              <li class="form__filter-option checkbox">
+                <input class="checkbox-input visually-hidden" type="checkbox" name="need-advice" id="need-advice">
+                <label class="checkbox-label" for="need-advice">Молоко</label>
+              </li>
+              <li class="form__filter-option checkbox">
+                <input class="checkbox-input visually-hidden" type="checkbox" name="need-advice" id="need-advice">
+                <label class="checkbox-label" for="need-advice">Витамины</label>
+              </li>
+            </ul>
+          </section>
+          <button class="form__sumbit" type="submit">Отправить заявку</button>
+        </form>
+        <p>* — Обязательные поля</p>
       </div>
-
-      <section class="additions">
-        <h2 class="additions__text complex-title">
-          <span class="complex-title__text">Дополнительные товары</span>
-        </h2>
-        <div class="additions__block">
-          <ul class="additions__list">
-            <li class="additions__item">
-              <div class="additions__price-tag">
-                <h3 class="additions__title">Сахарозаменитель</h3>
-                <table class="additions__info">
-                  <tbody>
-                    <tr>
-                      <td>1 упаковка (100 г)</td>
-                      <td>200 Р.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <a class="additions__link" href="#">Заказать</a>
-            </li>
-            <li class="additions__item">
-              <div class="additions__price-tag">
-                <h3 class="additions__title">Питьевая вода</h3>
-                <table class="additions__info">
-                  <tbody>
-                    <tr>
-                      <td>5 литров</td>
-                      <td>50 Р.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <a class="additions__link" href="#">Заказать</a>
-            </li>
-            <li class="additions__item">
-              <div class="additions__price-tag">
-                <h3 class="additions__title">Молоко</h3>
-                <table class="additions__info">
-                  <tbody>
-                    <tr>
-                      <td>1 литр</td>
-                      <td>100 Р.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <a class="additions__link" href="#">Заказать</a>
-            </li>
-            <li class="additions__item additions__item--border">
-              <div class="additions__price-tag">
-                <h3 class="additions__title">Витамины</h3>
-                <table class="additions__info">
-                  <tbody>
-                    <tr>
-                      <td>1 упаковка (30 г)</td>
-                      <td>300 Р.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <a class="additions__link" href="#">Заказать</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="present">
-        <div class="present__block">
-          <a class="present__link" href="#">Закажите все и получите чехол для кота в подарок!</a>
-        </div>
-      </section>
-
+    </section>
   </main>
 
   <footer class="page-footer">
-    <section class="invite invite__grey">
+    <section class="invite">
       <h2 class="visually-hidden">Адрес магазина</h2>
       <p class="invite__text">Приглашаем к сотрудничеству дилеров!</p>
       <p class="invite__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

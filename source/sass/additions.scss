@@ -1,0 +1,127 @@
+.additions {
+  margin: 20px 20px;
+}
+
+.additions__text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.additions__list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.additions__item:first-child {
+  border-top: 1px solid #cdcdcd;
+  padding-top: 13px;
+  margin: 0;
+}
+
+.additions__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additions__title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 11px;
+  margin-top: 0;
+  margin-left: 2px;
+  color: $special_dark-grey-2;
+}
+
+.additions__price-tag {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additions__info {
+  width: 100%;
+  font-size: 14px;
+  line-height: 14px;
+  margin-bottom: 15px;
+  border-collapse: collapse;
+  font-family: "Arial", "Oswald", sans-serif;
+}
+
+.additions__info td:last-child {
+  text-align: right;
+}
+
+.additions__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: $basicgreen;
+  list-style: none;
+  text-decoration: none;
+  color: $basic-white;
+  padding: 9px 110px 9px 110px;
+}
+
+@media (min-width: $tablet) {
+  .additions {
+  margin: 0 0 75px;
+  }
+
+  .additions__text {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 64px;
+  }
+
+  .additions__block {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .additions__list {
+    margin-bottom: 70px;
+  }
+
+  .additions__item {
+    border: 1px solid #cdcdcd;
+    border-bottom: 0;
+  }
+
+  .additions__item--border {
+    border-bottom: 1px solid #cdcdcd;;
+  }
+
+  .additions__item:first-child {
+    padding-top: 0;
+    margin: 0;
+  }
+
+  .additions__price-tag {
+    flex-wrap: nowrap;
+    margin: 25px 36px;
+  }
+
+  .additions__title {
+    padding-right: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    flex: 0 0 50%;
+  }
+
+  .additions__info {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 9px;
+  }
+
+  .additions__link {
+    padding: 9px 285px 7px 285px;
+    margin: 38px 38px;
+  }
+}

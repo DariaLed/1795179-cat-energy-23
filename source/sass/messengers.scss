@@ -1,0 +1,39 @@
+.messengers {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.messengers__item {
+  list-style: none;
+  cursor: pointer;
+  margin: 0 16px;
+}
+
+.messengers__icon {
+  fill: #666666;
+}
+
+.messengers__icon:hover {
+  fill: $basicgreen;
+}
+
+.messengers__icon:active {
+  fill: rgba(104, 183, 56, 0.3);
+}
+
+@media (min-width: $tablet) {
+  .messengers {
+    padding: 57px 97px 0 142px
+  }
+
+  .messengers__item {
+    margin: 0 16px;
+  }
+}
+
+
+
