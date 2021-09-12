@@ -1,21 +1,31 @@
 .invite {
-  display: flex;
-  padding: 0px 20px 8px 20px;
   align-items: center;
-  justify-content: space-between;
 }
 
 .invite__grey {
   background: $basic_grey;
 }
 
+.invite__title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 13px;
+}
+
+.invite__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .invite__text {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  margin-right: 26px;
+  margin: 0;
+  padding: 0;
   color: rgba(17, 17, 17, 1);
-  ;
+  width: 49%;
 }
 
 .invite__address {
@@ -24,11 +34,17 @@
   font-size: 14px;
   line-height: 20px;
   color: $special_dark-grey;
+  width: 50%;
+}
+
+.invite__street {
+  margin: 0 0 -14px;
+  padding: 0;
 }
 
 @media (min-width: $tablet) {
   .invite {
-    padding: 56px 72px 40px 71px;
+    padding: 88px 53px 32px 52px;
     align-items: flex-start;
   }
 
@@ -44,5 +60,49 @@
     font-size: 16px;
     line-height: 20px;
     text-align: right;
+  }
+
+  .invite__street {
+    margin-bottom: 19px;
+    margin-top: -3px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .invite {
+    position: relative;
+    padding: 0;
+    width: 570px;
+  }
+
+  .invite__block {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 3;
+    top: 97px;
+    left: 110px;
+    background-color: #fff;
+  }
+
+  .invite__wrapper {
+    padding-left: 40px;
+    padding-right: 17px;
+  }
+
+  .invite__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 63px 41px 45px 36px;
+  }
+
+  .invite__text {
+    margin-right: 77px;
+  }
+
+  .invite__address {
+    text-align: left;
+    width: 188px;
+    margin-top: 3px;
   }
 }

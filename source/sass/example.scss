@@ -1,6 +1,7 @@
 .example {
   background: $special-grey;
   position: relative;
+  padding-bottom: 27px;
 }
 
 .example__title {
@@ -15,72 +16,205 @@
   font-family: "Arial";
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 25px;
+  padding: 0 20px 0 20px;
+}
+
+.example__stats {
+  display: flex;
   padding: 0 20px 0 20px;
 }
 
 .example__ratio {
-  display: inline-block;
-  margin: 0px 17px 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 124px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+}
+
+.example__ratio--weight {
+  margin-right: 31px;
 }
 
 .example__number {
-  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   text-transform: uppercase;
-  text-align: center;
-  padding: 0;
-  margin-bottom: -4px;
+  color: $basic-black;
+  margin: auto;
 }
 
 .example__minus {
   font-family: "Arial", "Oswald", sans-serif;
-  font-weight: 400;
+  position: absolute;
+  left: -1px;
+  right: 0;
+  bottom: -16px;
+  margin: 0 auto;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  width: 79px;
+  color: $special_dark-grey;
+  background: $special-grey;
+}
+
+.example__ratio--weight .example__minus {
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .example__text--cost {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 19px 0 0 66px;
+  text-align: center;
+  margin-top: 34px;
+  margin-bottom: 40px;
 }
 
 .example__demonstration {
-  margin-bottom: 375px;
-  margin-top: 42px;
+  margin-top: 39px;
 }
 
-.example__demonstration::before {
-  position: absolute;
-  display: block;
-  content: "";
-  background-image: url("../img/before-mobile-1.jpg");
-  width: 311px;
-  height: 232px;
+.example__change {
+  display: flex;
+  align-items: center;
+  width: 200%;
+}
+
+.example__image {
+  width: 100%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.example__image--before {
+  background-image: url("../img/before-mobile.png");
+}
+
+.example__image--after {
+  background-image: url("../img/cat-skinny.png");
+}
+
+.example__demonstration .example__change, .example__demonstration .example__toggle {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.example__image--after .example__change, .example__demonstration--after .example__toggle {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+}
+
+.example__buttons {
+  display: flex;
+  align-items: center;
+  width: 219px;
+  margin: 15px auto 0;
+}
+
+.example__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: none;
+  text-align: center;
+  padding: 10px 13px;
+  width: 60px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.example__button--before {
+  margin-right: 8px;
+}
+
+.example__button--after {
+  margin-left: 4px;
+}
+
+.example__bar {
+  width: 73px;
+  height: 6px;
+  padding: 3px 5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: $basic-white;
+}
+
+.example__range {
+  display: none;
+}
+
+.example__toggle {
+  width: 50%;
+  height: 6px;
+  border-radius: 10px;
+  background-color: $basicgreen;
 }
 
 @media (min-width: $tablet) {
+  .example {
+    background-color: transparent;
+    margin-bottom: 40px;
+  }
+
   .example__title {
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
-    padding: 44px 0px 48px 30px;
+    padding: 14px 0px 48px 30px;
     margin: 0;
   }
 
   .example__text {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 24px;
+    margin-bottom: 46px;
     padding: 0 39px 6px 30px;
   }
 
+  .example__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .example__stats {
+    width: 366px;
+    padding-left: 28px;
+  }
+
   .example__ratio {
-  margin: 0px 28px 0 62px;
+    width: 162px;
+    padding-bottom: 19px;
+  }
+
+  .example__ratio--weight {
+    margin-right: 26px;
+  }
+
+  .example__ratio--weight .example__minus {
+    width: 115px;
+    padding: 0;
+    margin: 10px 25px;
+  }
+
+  .example__ratio--days .example__minus {
+    width: 139px;
+    padding: 0;
+    margin: 10px 13px;
   }
 
   .example__number {
@@ -96,12 +230,50 @@
     line-height: 14px;
     margin: 11px 0;
     padding: 0;
+    background-color: $basic-white;
+    margin: auto;
+  }
+
+  .example__ratio--days {
+    margin-left: 16px;
   }
 
   .example__text--cost {
     font-size: 20px;
-    line-height: 20px;
-    margin: 7px 0 0 66px;
+    line-height: 30px;
     text-align: right;
+    width: 180px;
+    margin: 0;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .example__title {
+    padding-left: 110px;
+    margin-bottom: 99px;
+  }
+
+  .example__text {
+    padding-left: 110px;
+    width: 435px;
+    margin-bottom: 63px;
+  }
+
+  .example__block {
+    padding-left: 81px;
+    flex-wrap: wrap;
+    width: 435px;
+  }
+
+  .example__stats {
+    margin-bottom: 54px;
+  }
+
+  .example__text--cost {
+    display: flex;
+    width: 325px;
+    padding-left: 30px;
+    justify-content: space-between;
   }
 }

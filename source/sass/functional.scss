@@ -68,9 +68,18 @@
   text-transform: uppercase;
   background: $basicgreen;
   list-style: none;
-  padding: 9px 73px 10px 73px;
+  padding: 8px 73px 8px 73px;
   text-decoration: none;
   color: $basic-white;
+}
+
+.button:hover,
+.button:focus {
+  background-color: rgba(94, 170, 47, 1);
+}
+
+.button:active {
+  color: rgba(255,255,255,.3);
 }
 
 .functional__button:hover {
@@ -79,7 +88,6 @@
 
 @media (min-width: $tablet) {
   .functional {
-    position: relative;
     padding-bottom: 512px;
   }
 
@@ -91,7 +99,17 @@
 }
 
   .functional__container::before {
-    display: none;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 265px;
+    left: 383px;
+    width: 709px;
+    height: 609px;
+    background-image: url("../img/index-can-tablet.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    z-index: 1;
   }
 
   .functional__header {
@@ -115,38 +133,31 @@
     display: none;
   }
 
-  .functional::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 265px;
-    left: 29px;
-    width: 709px;
-    height: 609px;
-    background-image: url("../img/index-can-tablet.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    z-index: 1;
-  }
-
   .functional__button {
-    position: relative;
     z-index: 10;
     font-size: 20px;
     line-height: 20px;
     margin-right: 305px;
     padding: 12px 27px 12px 27px;
   }
+
+  .functional__button:hover {
+    background-color: #5eaa2f;
+  }
+
+  .functional__button:active {
+    color: rgba(255,255,255,.3);
+  }
 }
 
 @media (min-width: $desktop) {
   .functional {
     margin-left: 72px;
-    padding-bottom: 0;
+    padding-bottom: 29px;
   }
 
   .functional__container {
-     min-height: 696px;
+    min-height: 536px;
      box-sizing: border-box;
      padding-top: 65px;
      &::before {
@@ -169,8 +180,8 @@
     content: "";
     display: block;
     position: absolute;
-    top: -18px;
-    left: 486px;
+    top: 141px;
+    left: 558px;
     width: 552px;
     height: 499px;
     background-image: url("../img/index-can-desktop.png");

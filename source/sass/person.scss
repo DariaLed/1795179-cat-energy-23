@@ -1,0 +1,73 @@
+.person {
+  padding: 0 20px 1px 20px;
+}
+
+.person__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.person__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: rgba(68, 68, 68, 1);
+}
+
+.person__input {
+  width: 80%;
+  margin-left: 14px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 13px 12px 12px 15px;
+  border: 1px solid #e6e6e6;
+  outline: 0;
+  color: rgba(68, 68, 68, 1);
+}
+
+.person__input:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.person__input:focus {
+  border: 1px solid #444444;
+}
+
+.person__input:checked~label {
+  border: 1px solid red;
+}
+
+@media (min-width: $tablet) {
+  .person {
+    padding: 0 0 1px 71px;
+  }
+
+  .person__block {
+    margin-bottom: 21px;
+  }
+
+  .person__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .person__input {
+    width: 100%;
+    margin-left: 14px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0px 9px 21px;
+    margin-right: 66px;
+  }
+}
+
+@media (min-width: $desktop) {
+.person {
+  padding: 0 0 1px 111px;
+  width: 44.72%;
+  margin-right: 11px;
+  }
+}

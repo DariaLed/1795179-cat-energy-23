@@ -1,9 +1,30 @@
 .goals {
-  padding: 0;
+  padding: 5px 0 24px 0;
   margin: 0;
   list-style: none;
+  border: 1px solid #d9d9d9;
+  margin-top: 6px;
 }
 
 .goals__item {
-  margin-bottom: 20px;
+  padding: 24px 0 0px 20px;
+}
+
+@media (min-width: $tablet) {
+  .goals {
+    padding: 5px 0 27px 9px;
+    margin: 51px 69px 49px 71px;
+  }
+}
+
+@media (min-width: $desktop) {
+.goals {
+  padding: 0px 0 27px 9px;
+  width: 176%;
+  margin: 0;
+  }
+
+  .goals__item {
+    padding: 25px 0 0px 20px;
+  }
 }
