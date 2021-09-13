@@ -111,9 +111,7 @@
 }
 
 .example__image--after .example__change, .example__demonstration--after .example__toggle {
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
 }
 

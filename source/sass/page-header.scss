@@ -46,6 +46,17 @@
   .page-header__logo--cat {
     display: none;
   }
+
+  .page-header:hover,
+.page-header:focus {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.page-header:active {
+  opacity: 0.6;
+  cursor: pointer;
+}
 }
 
 @media (min-width: $desktop) {
