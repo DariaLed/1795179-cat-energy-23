@@ -14,18 +14,12 @@
   list-style-type: none;
   padding: 0;
   margin-bottom: 35px;
-}
-
-.additions__item {
   border-top: 1px solid #cdcdcd;
-  padding-top: 13px;
-  margin: 0;
-  padding-bottom: 28px;
 }
 
 .additions__item {
   padding-top: 13px;
-  padding-bottom: 27px;
+  padding-bottom: 18px;
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -49,7 +43,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 14px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   border-collapse: collapse;
   font-family: "Arial", "Oswald", sans-serif;
 }
@@ -74,7 +68,7 @@
   list-style: none;
   text-decoration: none;
   color: $basic-white;
-  padding: 8px 109px 8px 110px;
+  padding: 9px 109px 10px 110px;
 }
 
 .additions__present {
@@ -96,7 +90,7 @@
   position: relative;
 }
 
-.additions__btn {
+.additions__order {
   color: white;
   margin: 0;
   font-size: 16px;
@@ -123,7 +117,7 @@
 
 @media (min-width: $tablet) {
   .additions {
-    margin: 0 0 63px;
+    margin: 0 0 19px;
   }
 
   .additions__text {
@@ -145,6 +139,7 @@
     border: 1px solid #cdcdcd;
     padding-bottom: 36px;
     padding-top: 0;
+    border-bottom: none;
   }
 
   .additions__item--border {
@@ -157,48 +152,40 @@
   }
 
   .additions__price-tag {
-    flex-wrap: nowrap;
-    margin: 25px 37px 23px 36px;
+    margin: 25px 37px -6px 36px;
   }
 
   .additions__title {
-    padding-right: 30px;
+    padding-right: 129px;
     font-size: 20px;
     line-height: 20px;
-    flex: 0 0 50%;
-  }
-
-  .additions__title--water {
-    padding-right: 87px;
-  }
-
-  .additions__title--milk {
-    padding-right: 122px;
+    width: 30%;
+    margin-bottom: 25px;
   }
 
   .additions__info {
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 9px;
+    margin-bottom: 18px;
+    width: 49%;
   }
-
-  .additions__options {
-    padding: 4px 0 0 40px;
-}
 
   .additions__weight {
     text-align: right;
   }
 
+  .additions__price {
+    width: 90px;
+  }
+
   .additions__link {
-    padding: 9px 285px 7px 285px;
-    margin: 38px 38px;
+    padding: 9px 285px 9px 287px;
   }
 
   .additions__present {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .additions__promo {
@@ -213,29 +200,33 @@
     position: relative;
   }
 
-  .additions__btn {
+  .additions__order {
     max-width: 161px;
     color: white;
     margin: 0;
     position: absolute;
     left: 423px;
-    top: 71px;
+    top: 69px;
     text-align: left;
   }
 
-  .present__block::before {
+  .additions__promo::before {
     content: "";
     position: absolute;
     display: block;
     width: 80px;
     height: 82px;
     background: url("../img/icon_present-mobile.svg");
-    top: 58px;
+    top: 55px;
     left: 79px;
   }
 }
 
 @media (min-width: $desktop) {
+  .additions__text {
+    margin-bottom: 63px;
+  }
+
   .additions__block {
     margin-left: 73px;
     margin-right: 30px;
@@ -243,71 +234,53 @@
 
   .additions__wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .additions__item {
-    border-top: 1px solid #cdcdcd;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    padding-bottom: 0;
-  }
-
-  .additions__price-tag {
-    margin: 22px 0px 16px 36px
-  }
-
-  .additions__item--border {
-    border-bottom: 1px solid #cdcdcd;
-  }
-
-  .additions__title {
-    padding-right: 105px;
-    font-size: 20px;
-    line-height: 20px;
-    flex: 0 0 33.5%;
-  }
-
-  .additions__title--water {
-    padding-right: 114px;
-  }
-
-  .additions__title--milk {
-    padding-right: 129px;
-  }
-
-  .additions__info {
-    width: 346px;
-    margin-right: 39px;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 69px;
-  }
-
-  .additions__options {
+    border: none;
+    margin: 0;
     padding: 0;
   }
 
+  .additions__price-tag {
+    border-bottom: 1px solid #cdcdcd;
+    margin: 25px 37px 26px 36px;
+  }
+
+  .additions__title {
+    width: 213px;
+    margin-right: 112px;
+    padding: 0;
+  }
+
+  .additions__info {
+    width: 287px;
+    margin-right: 38px;
+  }
+
   .additions__weight {
-    width: 235px;
     text-align: left;
   }
 
-  .additions__water {
-    margin-right: 30px;
-  }
-
   .additions__price {
-    width: 100px;
+    width: 44px;
+    text-align: left;
   }
 
   .additions__link {
-    padding: 9px 92px 11px 91px;
-    margin: -1px 0 0 0;
+    padding: 9px 93px 9px 90px;
+  }
+
+  .additions__promo {
+    background-image: url("../img/additions-bg-desktop.jpg");
+    align-items: center;
+    min-height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $basicgreen;
+    background-size: cover;
+    position: relative;
   }
 }
