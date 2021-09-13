@@ -9,13 +9,12 @@
   padding: 0;
 }
 
-.footer-socials__logo:hover {
-  padding: 0;
+.footer-socials__link:focus,
+.footer-socials__link:hover {
   opacity: 0.8;
 }
 
-.footer-socials__logo:active {
-  padding: 0;
+.footer-socials__link:active {
   opacity: 0.6;
 }
 
@@ -37,6 +36,18 @@
   }
 
   .footer-socials__logo {
-    padding-top: 59px;
+    padding-top: 37px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .footer-socials {
+    padding: 0 95px 61px 110px;
+    display: flex;
+}
+
+  .footer-socials__link {
+    width: 10%;
+    margin-top: 15px;
   }
 }

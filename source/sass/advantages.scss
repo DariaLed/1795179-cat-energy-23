@@ -12,61 +12,67 @@
 }
 
 .advantages__list {
-  margin: 39px 0;
+  margin: 38px 0;
   padding: 0;
+}
+
+.advantages__illustration--healthy {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/icon_leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30px;
+}
+
+.advantages__illustration--fast {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/icon_tub.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 11px;
+  background-size: 30px;
+}
+
+.advantages__illustration--replace {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/icon_eat.svg");
+  background-repeat: no-repeat;
+  background-position: 18px 14px;
+  background-size: 25px;
+}
+
+.advantages__illustration--change {
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  background-image: url("../img/icon_alarm.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 12px;
+  background-size: 32px;
 }
 
 .advantages__item {
   list-style: none;
-  position: relative;
-  margin-bottom: 26px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 
 .advantages__description {
   font-family: "Arial", "Oswald", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-left: 80px;
-}
-
-.advantages__item--healthy::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/group-1.svg");
-}
-
-.advantages__item--fast::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/group-2.svg");
-}
-
-.advantages__item--replace::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/group-3.svg");
+  width: calc(100% - 80px);
+  margin: 0;
 }
 
 .advantages__item--change{
-  margin-bottom: 47px;
-}
-
-.advantages__item--change::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 60px;
-  height: 60px;
-  background-image: url("../img/group-4.svg");
+  margin-bottom: 41px;
 }
 
 @media (min-width: $tablet) {
@@ -82,98 +88,111 @@
   }
 
   .advantages__list {
-    margin: 0;
+    margin: 0 30px 0 30px;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
     border-bottom: 1px solid #e6e6e6;
   }
 
+  .advantages__illustration--healthy {
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+  }
+
+  .advantages__illustration--fast {
+    width: 80px;
+    height: 80px;
+    background-position: 26px 22px;
+    background-size: 30px;
+  }
+
+  .advantages__illustration--replace {
+    width: 80px;
+    height: 80px;
+    background-position: 28px 25px;
+    background-size: 25px;
+  }
+
+  .advantages__illustration--change {
+    width: 80px;
+    height: 80px;
+    background-position: 26px 23px;
+    background-size: 32px;
+  }
+
+  .advantages__illustration {
+    width: 80px;
+    height: 80px;
+    margin-bottom: -64px;
+  }
+
   .advantages__item {
-    position: relative;
-    margin: 0 -15px 0 3px;
+    margin: 0;
     padding: 0;
-  }
-
-  .advantages__item--healthy {
-    background-image: url("../img/number-tablet1.svg");
-    background-repeat: no-repeat;
-    background-position-x: 153px;
-    height: 280px;
-    margin-bottom: 37px;
-  }
-
-  .advantages__item--fast {
-    margin-left: 3px;
-    background-image: url("../img/number-tablet2.svg");
-    background-repeat: no-repeat;
-    background-position-x: 149px;
-    height: 280px;
-  }
-
-  .advantages__item--replace {
-    background-image: url("../img/number-tablet3.svg");
-    background-repeat: no-repeat;
-    background-position-x: 151px;
-    height: 280px;
-    margin-bottom: 5px;
-  }
-
-  .advantages__item--change {
-    margin-left: 3px;
-    background-image: url("../img/number-tablet4.svg");
-    background-repeat: no-repeat;
-    background-position-x: 151px;
-    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 103px;
+    width: 46%;
   }
 
   .advantages__description {
     font-size: 16px;
     line-height: 24px;
-    margin: 112px 108px 1px 27px;
+    width: 246px;
   }
 
-  .advantages__item--healthy::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/group1-tablet.svg");
-    left: 27px;
+  .advantages__item--healthy {
+    background-image: url("../img/number1.png");
+    height: 214px;
+    background-position: 124px 0;
+    background-repeat: no-repeat;
   }
 
-  .advantages__item--fast::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/group2-tablet.svg");
-    margin-left: 27px;
+  .advantages__item--fast {
+    background-image: url("../img/number2.png");
+    height: 214px;
+    background-position: 124px 0;
+    background-repeat: no-repeat;
   }
 
-  .advantages__item--replace::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/group3-tablet.svg");
-    margin-left: 27px;
+  .advantages__item--replace {
+    background-image: url("../img/number3.png");
+    height: 214px;
+    background-position: 124px 0;
+    background-repeat: no-repeat;
   }
 
   .advantages__item--change {
-    margin-bottom: 0;
+    background-image: url("../img/number4.png");
+    height: 214px;
+    background-position: 124px 0;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages {
+  margin: 0 0 37px;
   }
 
-  .advantages__item--change::before {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-image: url("../img/group4-tablet.svg");
-    margin-left: 27px;
+  .advantages__work {
+    margin: 69px 106px 71px 110px;
+  }
+
+  .advantages__list {
+    margin: 0 96px 0 110px;
+    border-bottom: none;
+  }
+
+  .advantages__item {
+    margin: 0 0 15px;
+    padding: 0 0 30px;
+    width: 245px;
   }
 }

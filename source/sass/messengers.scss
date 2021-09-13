@@ -25,13 +25,71 @@
   fill: rgba(104, 183, 56, 0.3);
 }
 
+.messengers__facebook {
+  stroke: #666666;
+  fill: $basic-white;
+}
+
+.messengers__facebook:hover {
+  stroke: $basicgreen;
+  fill: $basic-white;
+}
+
+.messengers__facebook:active {
+  stroke: rgba(104, 183, 56, 0.3);
+  fill: $basic-white;
+}
+
 @media (min-width: $tablet) {
   .messengers {
-    padding: 57px 97px 0 142px
+    padding: 46px 92px 0 135px;
   }
 
   .messengers__item {
-    margin: 0 16px;
+    margin: 0 4px 0 21px;
+  }
+
+  .messengers__icon--vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .messengers__icon--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .messengers__icon--fb {
+    width: 28px;
+    height: 33px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .messengers {
+    padding: 50px 34px 0 143px;
+    width: 72%;
+  }
+
+  .messengers__item {
+    margin-left: 33px;
+  }
+
+  .messengers__icon--vk {
+    width: 30px;
+    height: 22px;
+  }
+
+  .messengers__icon--inst {
+    width: 23px;
+    height: 23px;
+    margin-left: -6px;
+  }
+
+  .messengers__icon--fb {
+    width: 28px;
+    height: 33px;
+    margin-left: -13px;
   }
 }
 

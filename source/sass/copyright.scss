@@ -34,15 +34,34 @@
 
 @media (min-width: $tablet) {
   .copyright {
-    padding: 0;
+    padding:  2px 0 0 0 ;
+    width: 30%;
   }
 
   .copyright__link {
     justify-content: flex-end;
-    padding: 10px 0;
+    padding-top: 12px;
   }
 
   .copyright__name {
-    margin-top: 10px;
+    margin-top: 48px;
+    margin-bottom: 0;
+    margin-right: 23px;
+    margin-left: 20px;
+  }
+
+  .copyright__svg {
+  margin-top: 41px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__name {
+    margin-right: 23px;
+    margin-top: 52px;
+  }
+
+  .copyright__svg {
+    margin-top: 46px;
   }
 }

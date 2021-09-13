@@ -8,40 +8,71 @@
   margin-top: 33px;
 }
 
-.programs__slim {
-  position: relative;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 50px;
-    height: 53px;
-    background-image: url("../img/cat_slim.svg");
-    background-repeat: no-repeat;
-    top: 21px;
-    left: 22px;
-  }
-}
-
-.programs__complete {
-  position: relative;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 67px;
-    height: 50px;
-    background-image: url("../img/cat_back.svg");
-    background-repeat: no-repeat;
-    top: 24px;
-    left: 13px;
-  }
-}
-
 .programs__item {
+  position: relative;
   list-style: none;
   background-color: $basic_grey;
-  padding: 0 0 21px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding-top: 21px;
+  padding-bottom: 22px;
+}
+
+.programs__illustration {
+  position: relative;
+}
+
+.programs__illustration::before {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 22px;
+}
+
+.programs__illustration::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  width: 70px;
+  height: 69px;
+  background-size: 37px;
+  background-position: 28px -1px;
+}
+
+.programs__illustration--pro {
+  position: relative;
+}
+
+.programs__illustration--pro::before {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #68b738;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 22px;
+}
+
+.programs__illustration--pro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 100px;
+  background-size: 68px;
+  background-position: 11px 14px;
 }
 
 .programs__head {
@@ -49,7 +80,7 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
-  padding: 30px 0 10px 91px;
+  margin: 9px 0 28px 91px;
 }
 
 .programs__text {
@@ -58,7 +89,7 @@
   line-height: 18px;
   color: $special_dark-grey;
   border-bottom: 1px solid #d9d9d9;
-  margin: 0 20px 18px 20px;
+  margin: 0 20px 0 20px;
   padding-bottom: 21px;
 }
 
@@ -69,17 +100,22 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  padding-left: 19px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.programs__link::after{
-  position: absolute;
-  background-image: url("../img/icon_arrow.svg");
+.programs__link:active {
+  opacity: 0.3;
+}
+
+.programs__link::after {
   content: "";
   display: block;
+  position: absolute;
+  background-image: url("../img/icon_arrow.svg");
   width: 32px;
   height: 10px;
-  top: 6px;
+  top: 22px;
   left: 120px;
 }
 
@@ -94,50 +130,53 @@
     margin-top: 30px;
   }
 
-  .programs__slim {
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 200px;
-      height: 211px;
-      background-image: url("../img/cat_slim_tablet.svg");
-      background-repeat: no-repeat;
-      top: 80px;
-      left: 446px;
-    }
-  }
-
-  .programs__complete {
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 268px;
-      height: 200px;
-      background-image: url("../img/cat_back_tablet.svg");
-      background-repeat: no-repeat;
-      top: 91px;
-      left: 412px;
-    }
-  }
-
   .programs__item {
-    padding: 0 0 57px;
+    padding: 77px 60px 57px 52px;
+    margin-top: 0;
+    margin-bottom: 31px;
+    position: relative;
   }
+
+  .programs__illustration::before {
+    width: 200px;
+    height: 202px;
+    top: 14px;
+    left: 394px;
+  }
+
+  .programs__illustration::after {
+    width: 202px;
+    height: 207px;
+    background-size: 141px;
+    top: 3px;
+    left: 396px;
+  }
+
+  .programs__illustration--pro::before {
+    width: 200px;
+    height: 202px;
+    top: 14px;
+    left: 396px;
+}
+
+  .programs__illustration--pro::after {
+    width: 278px;
+    height: 207px;
+    background-size: 267px;
+    top: 43px;
+    left: 350px;
+}
 
   .programs__head {
     font-size: 36px;
     line-height: 36px;
-    padding: 77px 0px 0px 53px;
+    margin: 0 0 25px 0;
   }
 
   .programs__text {
     font-size: 16px;
     line-height: 24px;
-    margin: -5px 314px 31px 53px;
+    margin: 0 252px 11px 0;
     padding-bottom: 21px;
     border: none;
   }
@@ -145,12 +184,12 @@
   .programs__link {
     font-size: 20px;
     line-height: 29px;
-    padding-left: 52px;
+    padding-left: 0;
   }
 
   .programs__link::after {
-    top: 9px;
-    left: 183px;
+    top: 28px;
+    left: 131px;
   }
 }
 
@@ -160,22 +199,66 @@
     padding: 0;
   }
 
+  .programs__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .programs__list {
     display: flex;
+    justify-content: space-between;
   }
 
   .programs__slim {
-    position: relative;
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 100px;
-      height: 106px;
-      background-image: url("../img/cat_slim_desktop.svg");
-      background-repeat: no-repeat;
-      top: 80px;
-      left: 446px;
-    }
+    margin-right: 81px;
+  }
+
+  .programs__item {
+    width: 517px;
+    height: auto;
+    padding-right: 0px;
+    padding-bottom: 62px;
+    margin-bottom: 0;
+  }
+
+  .programs__illustration::before {
+    width: 100px;
+    height: 100px;
+    top: -29px;
+    left: 0px;
+  }
+
+  .programs__illustration::after {
+    width: 105px;
+    height: 207px;
+    background-size: 71px;
+    top: -35px;
+    left: -14px;
+  }
+
+  .programs__illustration--pro::before {
+    width: 100px;
+    height: 100px;
+    top: -29px;
+    left: 0px;
+  }
+
+  .programs__illustration--pro::after {
+    width: 150px;
+    height: 207px;
+    background-size: 133px;
+    top: -22px;
+    left: -29px;
+  }
+
+  .programs__head {
+    margin-bottom: 75px;
+    margin-left: 162px;
+  }
+
+  .programs__text {
+    width: 94%;
+    padding-bottom: 7px;
+    margin: 0;
   }
 }

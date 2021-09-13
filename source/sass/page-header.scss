@@ -11,12 +11,22 @@
   left: 50%;
   top: 24px;
   transform: translateX(-50%);
+  cursor: pointer;
 }
 
 .page-header__logo--cat {
   left: 20px;
   transform: translateX(0);
   top: 11px;
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.8;
+}
+
+.page-header__logo:active {
+  opacity: 0.6;
 }
 
 @media (min-width: $tablet) {

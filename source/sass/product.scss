@@ -1,17 +1,16 @@
 .product {
   position: relative;
-  margin-top: 77px;
+  margin-top: 79px;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  border-top: 1px solid #ebebeb;
 }
 
 .product::after {
   content: "";
   position: absolute;
   display: block;
-  top: -50px;
+  top: -53px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -25,52 +24,58 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 7px;
+  margin-top: 3px;
+  margin-bottom: -4px;
 }
 
 .product__text {
   font-family: "Arial", "Oswald", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 23px;
+  margin-bottom: 32px;
   color: $special_dark-grey;
 }
 
 .product__button--light {
   background: #f2f2f2;
   color: $special_dark-grey;
-  padding: 10px 94px 10px 94px;
+  padding: 8px 94px 8px 94px;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 @media (min-width: $tablet) {
   .product {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-top: 0;
-  padding: 40px 35px 40px;
-  border: 1px solid #f2f2f2;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 79px;
+    margin-left: 31px;
+    padding: 43px 39px 36px 36px;
+    border: 1px solid #f2f2f2;
+    height: 100%;
+    width: 32%;
   }
 
   .product__title {
-  margin: 0 auto 25px;
-  max-width: 140px;
-  width: 100%;
-  font-size: 20px;
-  line-height: 22px;
+    margin: 117px 56px 25px;
+    max-width: 140px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .product__text {
     font-size: 16px;
     max-width: 180px;
     width: 100%;
-    margin: 0 auto 85px;
+    margin: 0 35px 85px;
     line-height: 18px;
   }
 
   .product__button--light {
-
+    padding: 12px 77px 10px 78px;
   }
 
   .product::after {
@@ -78,5 +83,30 @@
     width: 60px;
     height: 60px;
     background: url("../img/plus-tablet.svg") no-repeat center;
+  }
+}
+
+@media (min-width: $desktop) {
+.product {
+    margin-top: 79px;
+    margin-left: 112px;
+    padding: 41px 40px 36px 36px;
+    width: 11.7%;
+  }
+
+  .product__title {
+    margin: 116px 16px 24px;
+  }
+
+  .product__text {
+    margin: 0 2px 86px;
+  }
+
+  .product__button--light {
+    padding: 12px 24px 10px 28px;
+  }
+
+  .product::after {
+    top: 48px;
   }
 }

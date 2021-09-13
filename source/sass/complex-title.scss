@@ -30,15 +30,26 @@
   padding-right: 20px;
 }
 
+.complex-title__text--dop {
+  max-width: 329px;
+}
+
 @media (min-width: $tablet) {
   .complex-title {
     font-size: 36px;
     line-height: 36px;
-    padding-left: 20px;
+    padding-left: 49px;
   }
 
   .complex-title__text {
-    max-width: 318px;
+    max-width: 560px;
+  }
+
+  .complex-title {
+    padding-left: 49px;
+    &::before {
+      top: 22px;
+    }
   }
 }
 
@@ -53,5 +64,8 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+  .complex-title__text {
+    margin-left: -13px;
   }
 }

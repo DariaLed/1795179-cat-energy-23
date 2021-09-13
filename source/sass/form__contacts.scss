@@ -1,0 +1,140 @@
+.form__contacts {
+  padding: 26px 0 2px 0;
+}
+
+.form__records {
+  padding: 35px 20px 5px 20px;
+}
+
+.form__block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__input {
+  margin-left: 10px;
+}
+
+.form__block--email {
+  position: relative;
+  &::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/icon_email.svg");
+  background-repeat: no-repeat;
+  }
+}
+
+.form__block--telephone{
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/phone-1.svg");
+    background-repeat: no-repeat;
+    }
+}
+
+.form__textarea {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 8px 0 0 15px;
+  border: 1px solid #e6e6e6;
+  outline: 0;
+  color: #444444;
+  width: 82%;
+  height: 140px;
+  margin: 40px 20px 21px 20px;
+  resize: none;
+}
+
+@media (min-width: $tablet) {
+  .form__contacts {
+    margin-bottom: -10px;
+  }
+
+.form__records {
+  padding: 77px 0 53px 70px;
+  }
+
+  .form__block {
+    margin-bottom: 20px;
+  }
+
+  .form__input {
+    margin-left: 16px;
+  }
+
+  .form__block--email {
+    position: relative;
+    &::before {
+      top: 17px;
+      right: 84px;
+    }
+  }
+
+  .form__block--telephone{
+    position: relative;
+    &::before {
+      top: 15px;
+      right: 83px;
+    }
+  }
+
+  .form__textarea {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding: 9px 0px 24px 18px;
+    border: 1px solid #e6e6e6;
+    outline: 0;
+    color: #444444;
+    width: 80%;
+    height: 140px;
+    margin: 77px -36px 62px 70px;
+    resize: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__records {
+    padding: 75px 42px 57px 111px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form__block {
+    width: 50%;
+    margin-right: -10px;
+  }
+
+  .form__block--email::before {
+    top: 19px;
+    right: 86px;
+  }
+
+  .form__block--telephone::before {
+    top: 16px;
+    right: 80px;
+  }
+
+  .form__textarea {
+    padding: 9px 60px 23px 18px;
+    width: 80%;
+    margin: 76px 20px 66px 110px;
+  }
+}
+
+
