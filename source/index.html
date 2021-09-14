@@ -25,23 +25,25 @@
 
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <ul class="main-nav__list site-list  site-list--index">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html" class="site-list__link">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="catalog.html" class="site-list__link">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a href="form.html" class="site-list__link">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list  site-list--index">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html" class="site-list__link">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html" class="site-list__link">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html" class="site-list__link">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -154,7 +156,7 @@
         <div class="invite__wrapper">
           <div class="invite__title">
             <h2 class="visually-hidden">Адрес магазина</h2>
-            <p class="invite__text">Приглашаем к сотрудничеству дилеров!</p>
+            <p class="invite__text">Приглашаем<br>к сотрудничеству дилеров!</p>
             <div class="invite__address">
               <p class="invite__street">ул. Большая Конюшенная, д. 19/8</p>
               <p class="invite__city">Санкт-Петербург</p>
@@ -224,6 +226,7 @@
       </div>
     </section>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

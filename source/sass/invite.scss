@@ -87,22 +87,22 @@
 
   .invite__wrapper {
     padding-left: 40px;
-    padding-right: 17px;
+    padding-right: 32px;
   }
 
   .invite__title {
     display: flex;
     justify-content: space-between;
-    padding: 63px 41px 45px 36px;
+    padding: 66px 41px 42px 36px;
   }
 
   .invite__text {
-    margin-right: 77px;
+    margin-right: 62px;
+    line-height: 24px;
   }
 
   .invite__address {
     text-align: left;
     width: 188px;
-    margin-top: 3px;
   }
 }

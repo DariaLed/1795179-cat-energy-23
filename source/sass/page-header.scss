@@ -47,13 +47,13 @@
     display: none;
   }
 
-  .page-header:hover,
-.page-header:focus {
-  opacity: 0.8;
-  cursor: pointer;
+  .page-header__logo-image:hover,
+  .page-header__logo-image:focus {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
-.page-header:active {
+  .page-header__logo-image:active {
   opacity: 0.6;
   cursor: pointer;
 }
