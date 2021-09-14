@@ -228,13 +228,14 @@
   }
 
   .additions__block {
-    margin-left: 73px;
+    margin-left: 0;
     margin-right: 30px;
   }
 
   .additions__wrapper {
     display: flex;
     justify-content: space-between;
+    margin: 0 110px 0 110px;
   }
 
   .additions__item {
@@ -245,18 +246,22 @@
 
   .additions__price-tag {
     border-bottom: 1px solid #cdcdcd;
-    margin: 25px 37px 26px 36px;
+    margin: 29px 50px 0 0;
+    flex-wrap: nowrap;
   }
 
   .additions__title {
     width: 213px;
-    margin-right: 112px;
-    padding: 0;
+    margin-right: 111px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: -3px;
   }
 
   .additions__info {
     width: 287px;
     margin-right: 38px;
+    margin-bottom: 22px;
   }
 
   .additions__weight {
@@ -269,18 +274,36 @@
   }
 
   .additions__link {
-    padding: 9px 93px 9px 90px;
+    padding: 9px 92px 9px 91px;
+    margin: -13px 0 15px 0;
+  }
+
+  .additions__present {
+    margin: 16px 95px 0 0;
+    padding: 0;
   }
 
   .additions__promo {
     background-image: url("../img/additions-bg-desktop.jpg");
     align-items: center;
-    min-height: 200px;
-    width: 100%;
+    min-height: 289px;
+    width: 245px;
     background-repeat: no-repeat;
     background-position: center;
     background-color: $basicgreen;
     background-size: cover;
     position: relative;
+    &::before {
+      top: 58px;
+      left: 85px;
+    }
+  }
+
+  .additions__order {
+    margin: 0;
+    left: 26px;
+    top: 187px;
+    text-align: center;
+    min-width: 78%;
   }
 }
