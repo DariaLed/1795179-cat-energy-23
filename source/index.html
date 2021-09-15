@@ -9,7 +9,7 @@
   <link href="./css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body page-body--index">
 
   <header class="page-header">
     <a class="page-header__logo page-header__logo--cat">
@@ -50,11 +50,15 @@
   <main class="page-main">
 
     <section class="functional">
-      <div class="functional__container">
-        <h1 class="functional__header">Функциональное питание для котов</h1>
-        <p class="functional__intro">
-          Занялся собой? Займись котом!
-        </p>
+      <div class="functional__wrapper">
+        <div class="functional__container">
+          <div class="functional__bg">
+            <h1 class="functional__header">Функциональное питание для котов</h1>
+            <p class="functional__intro">
+              Занялся собой? Займись котом!
+            </p>
+          </div>
+        </div>
       </div>
       <a class="functional__button button" href="form.html">Подобрать программу</a>
     </section>
@@ -112,41 +116,51 @@
     </section>
 
     <section class="example">
-      <h3 class="example__title">Живой пример</h3>
-      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в
-        день.</p>
-      <div class="example__block">
-        <div class="example__stats">
-          <div class="example__ratio example__ratio--weight">
-            <p class="example__number">5 кг</p>
-            <p class="example__minus">снижение веса</p>
+      <div class="example__title-wrapper">
+        <h3 class="example__title">Живой пример</h3>
+      </div>
+      <div class="example__wrapper">
+        <div class="example__text-container">
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов
+            в
+            день.</p>
+          <div class="example__block">
+            <div class="example__stats example-stats">
+              <div class="example-stats__ratio example__ratio--weight">
+                <p class="example-stats__number">5 кг</p>
+                <p class="example-stats__minus">снижение веса</p>
+              </div>
+              <div class="example-stats__ratio example__ratio--days">
+                <p class="example-stats__number">60 дней</p>
+                <p class="example-stats__minus">затрачено времени</p>
+              </div>
+            </div>
+            <p class="example__text--cost">
+              <span>Затраты на питание:</span>
+              <span>15 000 руб.</span>
+            </p>
           </div>
-          <div class="example__ratio example__ratio--days">
-            <p class="example__number">60 дней</p>
-            <p class="example__minus">затрачено времени</p>
+        </div>
+        <div class="example__demonstration">
+          <div class="example-change">
+            <div class="example-change__screen-container example-change__screen-container--one">
+              <div class="example-change__screen--one example-change__screen"></div>
+            </div>
+            <div class="example-change__screen-container example-change__screen-container--two">
+              <div class="example-change__screen--two example-change__screen"></div>
+            </div>
+            <div class="demo">
+              <a href="#" class="demo__before" aria-label="До правильного питания">Было</a>
+              <div class="demo__scale"></div>
+              <div class="demo__handle"></div>
+              <a href="#" class="demo__after" aria-label="После правильного питания">Стало</a>
+            </div>
           </div>
         </div>
-        <p class="example__text--cost">
-          <span>Затраты на питание:</span>
-          <span>15 000 руб.</span>
-        </p>
       </div>
-      <div class="example__demonstration example__demonstration--after">
-        <div class="example__change">
-          <div class="example__image example__image--before"></div>
-          <div class="example__image example__image--after"></div>
-        </div>
-      </div>
-      <div class="example__buttons">
-        <button class="example__button example__button--before" type="button">Было</button>
-        <div class="example__bar">
-          <input type="range" class="example__range" min="1" value="50">
-          <div class="example__toggle"></div>
-        </div>
-        <button class="example__button example__button--after" type="button">Стало</button>
-      </div>
+
     </section>
   </main>
 

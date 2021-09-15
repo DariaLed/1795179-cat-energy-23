@@ -141,6 +141,12 @@
     width: 46%;
   }
 
+  .advantages__item:nth-last-child(1),
+  .advantages__item:nth-last-child(2)
+  {
+    padding-bottom: 70px;
+  }
+
   .advantages__description {
     font-size: 16px;
     line-height: 24px;
@@ -178,7 +184,9 @@
 
 @media (min-width: $desktop) {
   .advantages {
-  margin: 0 0 37px;
+    margin: 0 0 -92px;
+    position: relative;
+    z-index: 10;
   }
 
   .advantages__work {

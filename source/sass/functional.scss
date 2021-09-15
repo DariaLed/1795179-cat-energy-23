@@ -4,27 +4,11 @@
   text-align: center;
 }
 
-.functional__container {
+.functional__wrapper{
   position: relative;
-  padding-bottom: 281px;
-   min-height: 302px;
-   box-sizing: border-box;
-   padding-top: 27px;
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 302px;
-    background-color: $basicgreen;
-    background-image: url("../img/functional-bg-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: center top;
-    z-index: 1;
-  }
+  padding-bottom: 199px;
+  margin-bottom: 2px;
+
   &::after {
     content: "";
     display: block;
@@ -41,14 +25,67 @@
   }
 }
 
+.functional__container {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    min-height: 302px;
+    height: 100%;
+    background: #64a73c;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-size: 2px 100%;
+    display: block;
+    z-index: -3;
+  }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 50vw;
+      min-height: 302px;
+      height: 100%;
+      background: url("../img/green-bg-right.jpg") repeat-x 0 0;
+      left: 50%;
+      top: 0;
+      z-index: -2;
+  }
+}
+
+.functional__bg{
+  position: relative;
+  padding-bottom: 100px;
+  padding-top: 27px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 302px;
+    height: 100%;
+    background-image: url("../img/functional-bg-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    z-index: -1;
+  }
+}
+
 .functional__header {
+  padding: 0;
+  margin: 0 auto 26px;
   font-size: 36px;
   line-height: 36px;
-  padding: 0;
-  margin: 0 0 26px;
-  position: relative;
-  z-index: 10;
-  font-weight: normal;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 250px;
 }
 
 .functional__intro {
@@ -92,11 +129,11 @@
   }
 
   .functional__container {
-    padding-top: 64px;
-    padding-left: 117px;
-    padding-bottom: 0;
-    min-height: auto;
-}
+    position: relative;
+    text-align: left;
+    padding-left: 116px;
+    padding-top: 65px;
+  }
 
   .functional__container::before {
     content: "";
@@ -110,7 +147,27 @@
     background-repeat: no-repeat;
     background-position: center top;
     z-index: 1;
+    background-color: transparent;
+    background-size: cover;
   }
+
+  .functional__wrapper{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .functional__wrapper::after{
+    display: none;
+  }
+
+  .functional__bg {
+    padding: 0;
+
+    &::after{ 
+      display: none;
+    }
+
+}
 
   .functional__header {
     color: $basic-black;
@@ -118,7 +175,8 @@
     line-height: 60px;
     width: 420px;
     text-align: left;
-    padding-bottom: 15px;
+    padding-bottom: 40px;
+    margin: 0;
   }
 
   .functional__intro {
@@ -139,6 +197,7 @@
     line-height: 20px;
     margin-right: 305px;
     padding: 12px 27px 12px 27px;
+    position: relative;
   }
 
   .functional__button:hover {
@@ -152,27 +211,34 @@
 
 @media (min-width: $desktop) {
   .functional {
-    margin-left: 72px;
-    padding-bottom: 29px;
+    position: relative;
+    padding-bottom: 0;
+    overflow: visible;
+    margin-bottom: 81px;
+    &::before {
+      content: "";
+      width: calc(50vw - 9px);
+      left: 50%;
+      top: -120px;
+      background: url("../img/functional-bg-desktop.jpg") no-repeat top left;
+      background-size: cover;
+      height: calc(100% + 119px);
+      position: absolute;
+      z-index: -1;
   }
+}
+.functional__wrapper {
+  position: relative;
+  width: 1220px;
+  margin: 0 auto;
+}
 
   .functional__container {
-    min-height: 536px;
-     box-sizing: border-box;
-     padding-top: 65px;
-     &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -159px;
-      left: 1008px;
-      width: 720px;
-      height: 694px;
-      background-color: $basicgreen;
-      background-image: url("../img/functional-bg-desktop.jpg");
-      background-repeat: no-repeat;
-      background-position: center top;
-      z-index: 1;
+    padding-left: 80px;
+    padding-top: 33px;
+    padding-bottom: 168px;
+    &::before{
+      display: none;
     }
   }
 
@@ -180,13 +246,36 @@
     content: "";
     display: block;
     position: absolute;
-    top: 141px;
-    left: 558px;
+    bottom: 54px;
+    left: 50%;
+    margin-left: -163px;
     width: 552px;
     height: 499px;
     background-image: url("../img/index-can-desktop.png");
     background-repeat: no-repeat;
     background-position: center top;
     z-index: 1;
+  }
+
+  .functional__header{
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #000000;
+    width: 50%;
+    margin: 31px 0 41px;
+    padding: 0;
+  }
+
+  .functional__button {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    padding: 18px 26px 19px;
+    margin: 0;
+    position: relative;
+    margin-left: -815px;
+    bottom: 184px;
+    transform: translate(0, 0);
   }
 }
