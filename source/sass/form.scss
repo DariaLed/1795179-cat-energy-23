@@ -1,3 +1,23 @@
+.form__choice {
+  padding: 27px 20px 38px;
+}
+
+.form__selection {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.form__filling {
+  font-size: 14px;
+  line-height: 18px;
+  width: 85%;
+  margin-top: 37px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
 .form__contacts {
   padding: 26px 0 2px 0;
 }
@@ -61,13 +81,31 @@
 }
 
 @media (min-width: $tablet) {
+  .form__choice {
+  padding: 64px 69px 46px;
+  }
+
+  .form__selection {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+  }
+
+  .form__filling {
+    font-size: 20px;
+    line-height: 30px;
+    width: 56%;
+    margin-top: 55px;
+    margin-bottom: 20px;
+  }
+
   .form__contacts {
     margin-bottom: -10px;
-    padding-top: 29px;
+    padding: 29px 0 2px;
   }
 
 .form__records {
-  padding: 77px 0 53px 70px;
+    padding: 76px 0 54px 69px;
   }
 
   .form__block {
@@ -110,30 +148,66 @@
 }
 
 @media (min-width: $desktop) {
-  .form__records {
-    padding: 75px 42px 57px 111px;
+  .form {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .form__choice {
+    padding: 27px 0 47px;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .form__filling {
+    width: 31%;
+  }
+
+  .form__block-info {
     display: flex;
+    flex-wrap: wrap;
+    width: 1220px;
+    margin: 0 auto 48px;
     justify-content: space-between;
   }
 
+  .form__goals{
+    width: 570px;
+  }
+
+  .form__records {
+    padding: 75px 0 49px;
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .form__block {
-    width: 50%;
-    margin-right: -10px;
+    width: 569px;
+    margin-right: 4px;
   }
 
   .form__block--email::before {
     top: 19px;
-    right: 86px;
+    right: 19px;
   }
 
   .form__block--telephone::before {
     top: 16px;
-    right: 80px;
+    right: 14px;
   }
 
   .form__textarea {
     padding: 9px 60px 23px 18px;
-    width: 80%;
-    margin: 76px 20px 66px 110px;
+    width: 1220px;
+    margin: 76px auto 102px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .form__contacts {
+    margin-bottom: 0;
+    padding: 0;
   }
 }

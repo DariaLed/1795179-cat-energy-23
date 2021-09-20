@@ -25,17 +25,17 @@
   fill: rgba(104, 183, 56, 0.3);
 }
 
-.messengers__facebook {
+.messengers__icon--fb {
   stroke: #666666;
   fill: $basic-white;
 }
 
-.messengers__facebook:hover {
+.messengers__icon--fb:hover {
   stroke: $basicgreen;
   fill: $basic-white;
 }
 
-.messengers__facebook:active {
+.messengers__icon--fb:active {
   stroke: rgba(104, 183, 56, 0.3);
   fill: $basic-white;
 }
@@ -92,6 +92,3 @@
     margin-left: -13px;
   }
 }
-
-
-

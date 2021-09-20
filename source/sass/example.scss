@@ -26,12 +26,12 @@
 .example__text{
   padding: 0;
   margin: 0 0 25px 0;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
 }
 
-.example__text--cost {
+.example__text-cost {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -91,9 +91,10 @@
     line-height: 24px;
     margin-bottom: 53px;
     padding-right: 10px;
+    width: 700px;
   }
 
-  .example__text--cost {
+  .example__text-cost {
     width: 174px;
     font-size: 20px;
     text-align: right;
@@ -236,7 +237,7 @@
     left: auto;
   }
 
-  .example__text--cost {
+  .example__text-cost {
     width: 367px;
     font-size: 20px;
     text-align: left;
@@ -245,8 +246,15 @@
     margin: 6px 0 0 0;
   }
 
+  .example__text-cost span{
+    padding-right: 59px;
+  }
+
+  .example__text-cost span:last-child{
+    padding-right: 0;
+  }
+
   .live-example__cost{
     padding-left: 59px;
   }
 }
-

@@ -45,7 +45,7 @@
   line-height: 14px;
   margin-bottom: 16px;
   border-collapse: collapse;
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 
 .additions__options {
@@ -88,6 +88,11 @@
   background-color: $basicgreen;
   background-size: cover;
   position: relative;
+  @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/present-mobile@2x.jpg");
+      background-size: cover;
+    }
 }
 
 .additions__order {
@@ -117,7 +122,7 @@
 
 @media (min-width: $tablet) {
   .additions {
-    margin: 0 0 19px;
+    margin: 4px 0 74px;
   }
 
   .additions__text {
@@ -198,6 +203,11 @@
     background-color: $basicgreen;
     background-size: cover;
     position: relative;
+    @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/present-tablet@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .additions__order {
@@ -223,6 +233,21 @@
 }
 
 @media (min-width: $desktop) {
+  .additions {
+    overflow: hidden;
+    width: 1220px;
+    margin: 0 auto 17px;
+  }
+
+  .additions__list {
+    border-top: none;
+  }
+
+  .additions__item:first-child .additions__price-tag {
+    border-top: 1px solid #cdcdcd;
+    padding-top: 29px;
+  }
+
   .additions__text {
     margin-bottom: 63px;
   }
@@ -230,12 +255,13 @@
   .additions__block {
     margin-left: 0;
     margin-right: 30px;
+    margin-top: -14px;
   }
 
   .additions__wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 0 110px 0 110px;
+    margin: 0;
   }
 
   .additions__item {
@@ -293,6 +319,11 @@
     background-color: $basicgreen;
     background-size: cover;
     position: relative;
+    @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/additions-bg-desktop@2x.jpg");
+      background-size: cover;
+    }
     &::before {
       top: 58px;
       left: 85px;

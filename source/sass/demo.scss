@@ -132,13 +132,17 @@
     border-radius: 50%;
     background-color: #68b738;
     cursor: pointer;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5), 0 0 0 2px #68b738;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
     margin-left: -11px;
     transition: all 2s;
   }
 
   .demo__handle:hover {
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  }
+
+  .demo__handle:active {
+    box-shadow: 0 0 0 2px #68b738;
   }
 
   .demo__handle--on {

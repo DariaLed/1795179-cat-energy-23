@@ -92,11 +92,13 @@
 
 @media (min-width: $desktop) {
   .additionally__list {
-    margin: 55px 133px 0 111px;
+    margin: 55px auto 0;
+    width: 1220px;
   }
 
   .additionally__item {
     width: 206px;
     margin-bottom: 38px;
+    margin-right: 38px;
   }
 }

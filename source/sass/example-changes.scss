@@ -1,18 +1,18 @@
 .example-change {
-    position: relative;
-    height: 296px;
-    overflow: hidden;
-    width: 300px;
-    max-width: 100%;
-    margin: 0 auto;
+  position: relative;
+  height: 296px;
+  overflow: hidden;
+  width: 300px;
+  max-width: 100%;
+  margin: 0 auto;
 }
-  
+
 .example-change__screen-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .example-change__screen {
   position: absolute;
   top: 0;
@@ -21,77 +21,76 @@
   height: 100%;
   position: relative;
 }
-  
- .example-change__screen-container {
-   width: 100%;
-   height: 241px;
- }
- 
- 
- .example-change__screen-container--one {
-   z-index: 100;
-   width: 100%;
-   transition: all 2s;
-   overflow: hidden;
- } 
- 
- .example-change__screen-container--opened {
-   width: 100%;
- }
- 
- .example-change__screen-container--closed {
-   width: 0%;
- }
- 
- .example-change__screen::after {
-   content: "";
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: #eaeaea;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .example-change__screen--two::after {
-    background-color: #e7e7e7;
-  }
-  
-  .example-change__screen {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  
-  .example-change__screen::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    padding-bottom: 0;
-    background-repeat: no-repeat;
-  }
-  
-  .example-change__screen--one::before {
-    right: auto;
-    background-image: url("../img/before-mobile.png");
-    background-color: transparent;
-    background-position: -18px -1px;
-    width: 262px;
-    height: 100%;
-    top: 0;
-    left: -2px;
-    right: auto;
-  
+
+.example-change__screen-container {
+  width: 100%;
+  height: 241px;
+}
+
+.example-change__screen-container--one {
+  z-index: 100;
+  width: 100%;
+  transition: all 2s;
+  overflow: hidden;
+}
+
+.example-change__screen-container--opened {
+  width: 100%;
+}
+
+.example-change__screen-container--closed {
+  width: 0%;
+}
+
+.example-change__screen::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #eaeaea;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.example-change__screen--two::after {
+  background-color: #e7e7e7;
+}
+
+.example-change__screen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.example-change__screen::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 0;
+  background-repeat: no-repeat;
+}
+
+.example-change__screen--one::before {
+  right: auto;
+  background-image: url("../img/before-mobile.png");
+  background-color: transparent;
+  background-position: -18px -1px;
+  width: 262px;
+  height: 100%;
+  top: 0;
+  left: -2px;
+  right: auto;
+
     @media (min-resolution: 2dpi),
     (min-resolution: 2dppx) {
       background-image: url("../img/before-mobile.png");
       background-size: cover;
     }
   }
-  
+
   .example-change__screen--two::before {
     height: 100%;
     top: 4px;
@@ -100,14 +99,14 @@
     background-image: url("../img/cat-skinny.png");
     background-color: transparent;
     width: 303px;
-  
+
     @media (min-resolution: 2dpi),
     (min-resolution: 2dppx) {
       background-image: url("../img/after-mobile@2x.png");
       background-size: cover;
     }
   }
-  
+
   @media (min-width: $tablet) {
     .example-change {
       width: 662px;
@@ -120,16 +119,16 @@
       padding-bottom: 0;
       z-index: 100;
     }
-  
+
     .example-change__screen {
       position: relative;
     }
-  
+
     .example-change__screen-container {
       width: 100%;
       height: 100%;
     }
-  
+
     .example-change__screen-container::before {
       content: "";
       width: 100%;
@@ -141,7 +140,7 @@
       left: 0;
       z-index: -1;
     }
-  
+
     .example-change__screen::after {
       content: "";
       width: 100%;
@@ -153,24 +152,24 @@
       left: 0;
       z-index: -1;
     }
-  
+
     .example-change__screen--two::after {
       background-color: #e7e7e7;
     }
-  
+
     .example-change__screen-container--one {
       z-index: 100;
       width: 49.8%;
       transition: all 2s;
       overflow: hidden;
     }
-  
+
     .example-change__screen {
       width: 100%;
       height: 523px;
       position: relative;
     }
-  
+
     .example-change__screen::before {
       content: "";
       position: absolute;
@@ -179,25 +178,24 @@
       padding-bottom: 0;
       background-repeat: no-repeat;
     }
-  
+
     .example-change__screen--one::before {
       height: 100%;
       top: 4px;
       left: 26px;
       right: auto;
       background-image: url("../img/before-tablet@1x.png");
-			background-size: cover;
+      background-size: cover;
       background-color: transparent;
       background-position: -35px -1px;
       width: 662px;
-  
+
       @media (min-resolution: 2dpi){
-        background-image: url("../img/before-tablet@2x.png");
-        background-size: cover;
-  
+      background-image: url("../img/before-tablet@2x.png");
+      background-size: cover;
       }
     }
-  
+
     .example-change__screen--two::before {
       height: 100%;
       top: 4px;
@@ -205,25 +203,25 @@
       right: auto;
       background-image: url("../img/after-tablet@1x.png");
       background-color: transparent;
-			background-size: cover;
+      background-size: cover;
       width: 662px;
-  
+
       @media (min-resolution: 2dpi),
       (min-resolution: 2dppx) {
         background-image: url("../img/after-tablet@2x.png");
         background-size: cover;
       }
     }
-  
+
     .example-change__screen-container--opened {
       width: 84.5%;
     }
-  
+
     .example-change__screen-container--closed {
       width: 16.5%;
     }
   }
-  
+
   @media (min-width: $desktop) {
     .example-change {
       width: 100%;
@@ -233,7 +231,7 @@
       left: 0;
       transform: none;
     }
-  
+
     .example-change::before {
       content: "";
       display: block;
@@ -244,16 +242,16 @@
       top: 194px;
       right: 0;
     }
-  
+
     .example-change__screen {
       position: relative;
     }
-  
+
     .example-change__screen-container {
       width: 100%;
       height: 100%;
     }
-  
+
     .example-change__screen-container::before {
       content: "";
       width: 100%;
@@ -265,7 +263,7 @@
       left: 0;
       z-index: -1;
     }
-  
+
     .example-change__screen::after {
       content: "";
       width: 100%;
@@ -277,32 +275,32 @@
       left: 0;
       z-index: -1;
     }
-  
+
     .example-change__screen--two::after {
       background-color: #e7e7e7;
     }
-  
+
     .example-change__screen-container--one {
       z-index: 100;
       width: 53%;
       transition: all 2s;
     }
-  
-   .example-change__screen-container--opened {
+
+    .example-change__screen-container--opened {
       width: 89%;
     }
-  
+
     .example-change__screen-container--closed {
       width: 19%;
     }
-  
-  
+
+
     .example-change__screen {
       width: 571px;
       height: 100%;
       position: relative;
     }
-  
+
     .example-change__screen::before {
       content: "";
       position: absolute;
@@ -313,33 +311,33 @@
       left: -8px;
       top: 4px;
     }
-  
+
     .example-change__screen--one::before {
       background-image: url("../img/before-desktop@1x.png");
       background-color: transparent;
       background-position: -35px -1px;
-			background-size: cover;
-  
+      background-size: cover;
+
       @media (min-resolution: 2dpi) {
         background-image: url("../img/before-desktop@1x.png");
         background-size: cover;
-				background-size: cover;
+        background-size: cover;
       }
     }
-  
+
     .example-change__screen--two::before {
-      height: 523px;
+      height: 519px;
       top: 3px;
       left: auto;
-      right: -52px;
+      right: 17px;
       background-image: url("../img/after-desktop@1x.png");
-			background-size: cover;
+      background-size: cover;
       background-color: transparent;
-  
+      width: 88%;
+
       @media (min-resolution: 2dpi) {
         background-image: url("../img/after-desktop@2x.png");
-				background-size: cover;
+        background-size: cover;
       }
     }
   }
-  

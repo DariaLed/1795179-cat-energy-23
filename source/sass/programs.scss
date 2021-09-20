@@ -5,7 +5,7 @@
 
 .programs__list {
   padding: 0;
-  margin-top: 33px;
+  margin: 0;
 }
 
 .programs__item {
@@ -14,16 +14,12 @@
   background-color: $basic_grey;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
   padding-top: 21px;
-  padding-bottom: 22px;
+  padding-bottom: 23px;
+  margin-bottom: 20px;
 }
 
-.programs__illustration {
-  position: relative;
-}
-
-.programs__illustration::before {
+.programs__item::before {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -31,48 +27,36 @@
   content: "";
   display: block;
   position: absolute;
-  top: 2px;
+  top: 25px;
   left: 22px;
 }
 
-.programs__illustration::after {
+.programs__item--first::after {
   content: "";
   display: block;
   position: absolute;
   background-image: url("../img/icon-cat-slim.svg");
   background-repeat: no-repeat;
-  width: 70px;
-  height: 69px;
-  background-size: 37px;
-  background-position: 28px -1px;
-}
-
-.programs__illustration--pro {
-  position: relative;
-}
-
-.programs__illustration--pro::before {
-  width: 50px;
+  width: 36px;
   height: 50px;
-  border-radius: 50%;
-  background-color: #68b738;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 2px;
-  left: 22px;
+  top: 22px;
+  left: 30px;
+  background-position: 0 0;
+  background-size: cover;
 }
 
-.programs__illustration--pro::after {
+.programs__item--second::after {
   content: "";
   display: block;
   position: absolute;
   background-image: url("../img/icon-cat-pro.svg");
   background-repeat: no-repeat;
-  width: 150px;
-  height: 100px;
-  background-size: 68px;
-  background-position: 11px 14px;
+  top: 34px;
+  left: 12px;
+  width: 67px;
+  height: 28px;
+  background-position: 0 0;
+  background-size: cover;
 }
 
 .programs__head {
@@ -84,7 +68,7 @@
 }
 
 .programs__text {
-  font-family: Arial;
+  font-family: "Arial", sans-serif;;
   font-size: 14px;
   line-height: 18px;
   color: $special_dark-grey;
@@ -102,6 +86,11 @@
   text-transform: uppercase;
   padding-top: 20px;
   padding-left: 20px;
+  padding-right: 39px;
+}
+
+.programs__link:hover{
+  padding-right: 48px;
 }
 
 .programs__link:active {
@@ -113,10 +102,15 @@
   display: block;
   position: absolute;
   background-image: url("../img/icon_arrow.svg");
-  width: 32px;
+  width: 24px;
   height: 10px;
-  top: 22px;
-  left: 120px;
+  top: 24px;
+  right: 0px;
+  background-position: right center;
+}
+
+.programs__link:hover::after{
+  width: 33px;
 }
 
 @media (min-width: $tablet) {
@@ -127,7 +121,7 @@
 
   .programs__list {
     padding: 0;
-    margin-top: 30px;
+    margin: 0;
   }
 
   .programs__item {
@@ -137,35 +131,29 @@
     position: relative;
   }
 
-  .programs__illustration::before {
+  .programs__item::before {
     width: 200px;
-    height: 202px;
-    top: 14px;
-    left: 394px;
+    height: 200px;
+    top: 92px;
+    left: unset;
+    right: 60px;
   }
 
-  .programs__illustration::after {
-    width: 202px;
-    height: 207px;
-    background-size: 141px;
-    top: 3px;
-    left: 396px;
+  .programs__item--first::after {
+    top: 83px;
+    left: unset;
+    width: 140px;
+    height: 194px;
+    right: 92px;
   }
 
-  .programs__illustration--pro::before {
-    width: 200px;
-    height: 202px;
-    top: 14px;
-    left: 396px;
-}
-
-  .programs__illustration--pro::after {
-    width: 278px;
-    height: 207px;
-    background-size: 267px;
-    top: 43px;
-    left: 350px;
-}
+  .programs__item--second::after {
+    top: 135px;
+    left: unset;
+    width: 268px;
+    right: 28px;
+    height: 112px;
+  }
 
   .programs__head {
     font-size: 36px;
@@ -195,8 +183,9 @@
 
 @media (min-width: $desktop) {
   .programs {
-    margin: 0 110px 0 110px;
+    margin: 0 auto;
     padding: 0;
+    width: 1220px;
   }
 
   .programs__wrapper {
@@ -221,34 +210,30 @@
     margin-bottom: 0;
   }
 
-  .programs__illustration::before {
+  .programs__item::before {
     width: 100px;
     height: 100px;
-    top: -29px;
-    left: 0px;
+    top: 47px;
+    left: 52px;
+    right: unset;
   }
 
-  .programs__illustration::after {
-    width: 105px;
-    height: 207px;
-    background-size: 71px;
-    top: -35px;
-    left: -14px;
+  .programs__item--first::after {
+    top: 40px;
+    left: 67px;
+    width: 70px;
+    height: 97px;
+    right: unset;
+    background-size: cover;
   }
 
-  .programs__illustration--pro::before {
-    width: 100px;
-    height: 100px;
-    top: -29px;
-    left: 0px;
-  }
-
-  .programs__illustration--pro::after {
-    width: 150px;
-    height: 207px;
-    background-size: 133px;
-    top: -22px;
-    left: -29px;
+  .programs__item--second::after {
+    top: 68px;
+    left: 33px;
+    width: 134px;
+    right: unset;
+    height: 56px;
+    background-size: cover;
   }
 
   .programs__head {

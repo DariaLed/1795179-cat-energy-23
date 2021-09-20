@@ -65,9 +65,17 @@
 }
 
 @media (min-width: $desktop) {
-.person {
-  padding: 0 0 1px 111px;
-  width: 44.72%;
-  margin-right: 11px;
+  .person {
+    padding: 0;
+    width: 570px;
+    margin-right: 0;
+  }
+
+  .person__input {
+    width: 487px;
+    margin-left: 20px;
+    padding: 10px 0 9px 16px;
+    margin-right: 0;
+    box-sizing: border-box;
   }
 }

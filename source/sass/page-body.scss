@@ -7,7 +7,13 @@
   background-color: $basic-white;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $tablet) {
+  .page-body--index .page-body__footer {
+    background: #ffffff;
+  }
+}
+
+@media (min-width: $desktop) {
 .page-body--index {
     position: relative;
     &::before {
@@ -21,5 +27,9 @@
       display: block;
       z-index: 1;
     }
+  }
+
+  .page-body--index .page-body__footer {
+    background: #f2f2f2;
   }
 }

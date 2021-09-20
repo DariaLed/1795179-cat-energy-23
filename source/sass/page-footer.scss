@@ -1,0 +1,19 @@
+@media (min-width: $tablet) {
+  .page-footer {
+    background: #f2f2f2;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-footer{
+      background-color: #f2f2f2;
+  }
+
+  .page-footer__container{
+    position: relative;
+    min-height: 405px;
+    box-sizing: border-box;
+    padding-top: 96px;
+    padding-bottom: 100px;
+  }
+}

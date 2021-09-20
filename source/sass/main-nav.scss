@@ -27,7 +27,7 @@
   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 }
 
-.main-nav--closed .site-list__item {
+.main-nav--closed .main-nav__list {
   display: none;
 }
 
@@ -86,5 +86,17 @@
 @media (min-width: $tablet) {
   .main-nav__toggle {
     display: none;
+  }
+
+  .main-nav--closed .main-nav__list {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
   }
 }

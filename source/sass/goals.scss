@@ -15,16 +15,23 @@
     padding: 5px 0 27px 9px;
     margin: 51px 69px 49px 71px;
   }
+
+  .goals__item {
+    margin: 0 0 -12px;
+    padding: 21px 0 0 20px;
+  }
 }
 
 @media (min-width: $desktop) {
-.goals {
-  padding: 0px 0 27px 9px;
-  width: 176%;
-  margin: 0;
+  .goals {
+    padding: 24px 0 10px 30px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
   }
 
   .goals__item {
-    padding: 25px 0 0px 20px;
+    padding: 0;
+    margin-bottom: 9px;
   }
 }

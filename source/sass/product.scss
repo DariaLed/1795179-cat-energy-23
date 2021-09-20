@@ -29,7 +29,7 @@
 }
 
 .product__text {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 32px;
@@ -45,6 +45,15 @@
   cursor: pointer;
 }
 
+.product__button--light:hover,
+.product__button--light:focus {
+  background-color: #ebebeb;
+}
+
+.product__button--light:active {
+  color: rgba(68,68,68,.3);
+}
+
 @media (min-width: $tablet) {
   .product {
     display: flex;
@@ -52,7 +61,7 @@
     justify-content: flex-end;
     margin-top: 79px;
     margin-left: 31px;
-    padding: 43px 39px 36px 36px;
+    padding: 43px 39px 40px 36px;
     border: 1px solid #f2f2f2;
     height: 100%;
     width: 32%;
@@ -89,9 +98,11 @@
 @media (min-width: $desktop) {
   .product {
     margin-top: 79px;
-    margin-left: 112px;
+    margin-left: 0;
     padding: 40px 40px 40px 36px;
-    width: 11.7%;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
   }
 
   .product__title {

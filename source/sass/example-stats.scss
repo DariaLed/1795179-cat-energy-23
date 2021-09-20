@@ -7,7 +7,7 @@
     justify-content: space-between;
     margin: 0 0 27px;
   }
-  
+
   .example-stats__ratio {
     padding: 0;
     margin: 0;
@@ -15,11 +15,11 @@
     text-align: center;
     position: relative;
   }
-  
+
   .example-stats__minus {
     font-size: 12px;
     line-height: 12px;
-    font-family: "ArialTM", sans-serif;
+    font-family: "Arial", sans-serif;
     color: #444444;
     width: 77px;
     text-align: center;
@@ -27,7 +27,7 @@
     margin: -8px auto;
     padding: 0 7px;
   }
-    
+
   .example-stats__number {
     font-size: 24px;
     line-height: 24px;
@@ -36,20 +36,20 @@
       padding: 13px 4px 17px 4px;
     border: 1px solid #dcdcdc;
   }
-  
+
 @media (min-width: $tablet) {
   .example-stats {
-     width: 52%;
-     margin-bottom: 93px;
+    width: 52%;
+    margin-bottom: 93px;
   }
-  
+
   .example-stats__number {
     font-size: 30px;
     line-height: 37px;
     padding-top: 13px;
     padding-bottom: 19px;
   }
-  
+
   .example-stats__minus {
     font-size: 14px;
     line-height: 14px;
@@ -58,12 +58,12 @@
     background-color: #ffffff;
     padding: 0 7px;
   }
-  
+
   .example-stats__ratio {
     width: 45%;
-	}
+  }
 }
-  
+
 @media (min-width: $desktop) {
   .example-stats {
     padding-left: 0;
@@ -71,7 +71,7 @@
     margin: 0;
     padding-bottom: 53px;
   }
-  
+
   .example-stats__ratio {
     width: 44%;
   }
@@ -82,5 +82,5 @@
     width: auto;
     background-color: #f2f2f2;
     max-width: 80%;
-  }  
+  }
 }

@@ -2,18 +2,19 @@
   color: $basic-white;
   font-weight: normal;
   text-align: center;
+  margin-bottom: 22px;
 }
 
 .functional__wrapper{
   position: relative;
-  padding-bottom: 199px;
+  padding-bottom: 136px;
   margin-bottom: 2px;
 
   &::after {
     content: "";
     display: block;
     position: absolute;
-    bottom: 13px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     width: 280px;
@@ -22,11 +23,17 @@
     background-repeat: no-repeat;
     background-position: center top;
     z-index: 20;
+    @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-mobile@2x.png");
+      background-size: cover;
+    }
   }
 }
 
 .functional__container {
   position: relative;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -58,7 +65,7 @@
 
 .functional__bg{
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 132px;
   padding-top: 27px;
 
   &::after {
@@ -75,12 +82,17 @@
     transform: translateX(-50%);
     top: 0;
     z-index: -1;
+    @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/functional-bg-mobile@2x.jpg");
+      background-size: cover;
+    }
   }
 }
 
 .functional__header {
   padding: 0;
-  margin: 0 auto 26px;
+  margin: 0 auto 25px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -105,9 +117,10 @@
   text-transform: uppercase;
   background: $basicgreen;
   list-style: none;
-  padding: 8px 73px 8px 73px;
+  padding: 12px 5px 11px;
   text-decoration: none;
   color: $basic-white;
+  display: block;
 }
 
 .button:hover,
@@ -125,22 +138,29 @@
 
 @media (min-width: $tablet) {
   .functional {
-    padding-bottom: 512px;
+    padding-bottom: 0;
+    text-align: left;
+    width: 709px;
+    margin: 0 auto;
+    position: relative;
   }
 
   .functional__container {
     position: relative;
     text-align: left;
-    padding-left: 116px;
+    padding-left: 88px;
     padding-top: 65px;
+    overflow: visible;
+    padding-bottom: 563px;
   }
 
   .functional__container::before {
     content: "";
     display: block;
     position: absolute;
-    top: 265px;
-    left: 383px;
+    top: unset;
+    bottom: 0;
+    left: 50%;
     width: 709px;
     height: 609px;
     background-image: url("../img/index-can-tablet.png");
@@ -149,6 +169,11 @@
     z-index: 1;
     background-color: transparent;
     background-size: cover;
+    @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-tablet@2x.png");
+      background-size: cover;
+    }
   }
 
   .functional__wrapper{
@@ -163,10 +188,9 @@
   .functional__bg {
     padding: 0;
 
-    &::after{ 
+    &::after{
       display: none;
     }
-
 }
 
   .functional__header {
@@ -195,9 +219,12 @@
     z-index: 10;
     font-size: 20px;
     line-height: 20px;
-    margin-right: 305px;
-    padding: 12px 27px 12px 27px;
-    position: relative;
+    margin-left: 90px;
+    padding: 18px 27px 16px;
+    position: absolute;
+    display: inline-block;
+    vertical-align: middle;
+    bottom: 526px;
   }
 
   .functional__button:hover {
@@ -215,23 +242,30 @@
     padding-bottom: 0;
     overflow: visible;
     margin-bottom: 81px;
+    width: auto;
     &::before {
       content: "";
       width: calc(50vw - 9px);
       left: 50%;
-      top: -120px;
+      top: -158px;
       background: url("../img/functional-bg-desktop.jpg") no-repeat top left;
       background-size: cover;
-      height: calc(100% + 119px);
+      height: calc(100% + 159px);
       position: absolute;
       z-index: -1;
+      @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/functional-bg-desktop@2x.jpg");
+      background-size: cover;
+      }
+    }
   }
-}
-.functional__wrapper {
-  position: relative;
-  width: 1220px;
-  margin: 0 auto;
-}
+
+  .functional__wrapper {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
 
   .functional__container {
     padding-left: 80px;
@@ -255,6 +289,11 @@
     background-repeat: no-repeat;
     background-position: center top;
     z-index: 1;
+    @media (min-resolution: 2dpi),
+    (min-resolution: 2dppx) {
+      background-image: url("../img/index-can-desktop@2x.png");
+      background-size: cover;
+    }
   }
 
   .functional__header{
@@ -271,11 +310,11 @@
     display: inline-block;
     vertical-align: middle;
     font-size: 20px;
-    padding: 18px 26px 19px;
-    margin: 0;
+    padding: 18px 26px 17px;
     position: relative;
-    margin-left: -815px;
-    bottom: 184px;
-    transform: translate(0, 0);
+    margin: 0 0 0 -529px;
+    bottom: 183px;
+    left: 50%;
+    transform: translate(0,0);
   }
 }
